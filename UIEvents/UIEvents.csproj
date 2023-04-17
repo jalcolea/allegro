@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE78B876-D24D-4D59-B9E7-162DF61ECF97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Allegro.ClassEvents</RootNamespace>
+    <AssemblyName>Allegro.ServerClassEvents</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Allegro.Shared, Version=16.13.5, Culture=neutral, PublicKeyToken=e4b086c60dfa0c62, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Allegro.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Business.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Common\Allegro.Business.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Core.ClassEvents">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.Core.ClassEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Core.Logging">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.Core.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Core.Schema">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.Core.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Core.WebApi">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.Core.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Diagnostics">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.ESSConnect">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Products\PowerConnect\Allegro.ESSConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Power">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Products\Power\Allegro.Power.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Property.Schema">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Common\Allegro.Property.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.ProtoBuf.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.ProtoBuf.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.ProtoBuf.Core.Server">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.ProtoBuf.Core.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.Shared">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.UI">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.UI.Extensibility">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.UI.Extensibility.dll</HintPath>
+    </Reference>
+    <Reference Include="Allegro.UI.Loader">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Allegro.UI.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Documents.Excel.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Reports.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Documents.Reports.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Olap.DataSource.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Shared.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.AppStylistSupport.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.Misc.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinCalcManager.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v17.1.FormulaBuilder">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinCalcManager.v17.1.FormulaBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinChart.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinChart.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinDock.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinExplorerBar.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinGrid.DocumentExport.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListBar.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinListBar.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListView.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinListView.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPivotGrid.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinPivotGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinSchedule.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpellChecker.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinSpellChecker.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinStatusBar.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinTabbedMdi.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinTabControl.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinToolbars.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTree.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.UltraWinTree.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v17.1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\shared\Infragistics4.Win.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\SE91196\Horizon\16.13.5\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\WindowsFormsIntegration\v4.0_4.0.0.0__31bf3856ad364e35\WindowsFormsIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constraints.cs" />
+    <Compile Include="ConstraintsLog.cs" />
+    <Compile Include="ConstraintsLogVC.cs" />
+    <Compile Include="ConstraintsVC.cs" />
+    <Compile Include="ContractExecution.cs" />
+    <Compile Include="Counterparty.cs" />
+    <Compile Include="CreditAnalysis.cs" />
+    <Compile Include="Creditparty.cs" />
+    <Compile Include="cst_AtrGlobalerisImportVC.cs" />
+    <Compile Include="cst_BalanceReport.cs" />
+    <Compile Include="cst_BalanceReportVC.cs" />
+    <Compile Include="cst_Credit.cs" />
+    <Compile Include="cst_CreditVC.cs" />
+    <Compile Include="cst_DistributionDoc.cs" />
+    <Compile Include="cst_DistributionDocVC.cs" />
+    <Compile Include="cst_EOMReport.cs" />
+    <Compile Include="cst_EOMReportVC.cs" />
+    <Compile Include="cst_EPL.cs" />
+    <Compile Include="cst_EPLVC.cs" />
+    <Compile Include="cst_ExtensionParameter.cs" />
+    <Compile Include="cst_ExternalSourceCommon.cs" />
+    <Compile Include="cst_ExternalSourceInfragistics.cs" />
+    <Compile Include="cst_GlobalerisExport.cs" />
+    <Compile Include="cst_GlobalerisExportVC.cs" />
+    <Compile Include="cst_GlobalerisImportVC.cs" />
+    <Compile Include="cst_Hub.cs" />
+    <Compile Include="cst_HubExcel.cs" />
+    <Compile Include="cst_HubExcelManager.cs" />
+    <Compile Include="cst_loadermibgasinput.cs" />
+    <Compile Include="cst_loadermibgasinputVC.cs" />
+    <Compile Include="cst_MarkToMarketFull.cs" />
+    <Compile Include="cst_MarkToMarketFullVC.cs" />
+    <Compile Include="cst_Operations.cs" />
+    <Compile Include="cst_OperationsVC.cs" />
+    <Compile Include="cst_RisksExport.cs" />
+    <Compile Include="cst_sapconciliate.cs" />
+    <Compile Include="cst_sapconciliateVC.cs" />
+    <Compile Include="cst_sapsiliceexport.cs" />
+    <Compile Include="cst_sapsiliceexportVC.cs" />
+    <Compile Include="cst_Settlement.cs" />
+    <Compile Include="cst_SettlementVC.cs" />
+    <Compile Include="cst_TradeLoaderConf.cs" />
+    <Compile Include="cst_TradeLoaderConfVC.cs" />
+    <Compile Include="cst_TradeLoading.cs" />
+    <Compile Include="cst_TradeLoadingVC.cs" />
+    <Compile Include="DatabaseArchive.cs" />
+    <Compile Include="DBAudit.cs" />
+    <Compile Include="Element.cs" />
+    <Compile Include="ElementLog.cs" />
+    <Compile Include="ElementManager.cs" />
+    <Compile Include="ElementManagerLibrary.cs" />
+    <Compile Include="ElementManagerVC.cs" />
+    <Compile Include="ElementVC.cs" />
+    <Compile Include="MessageLog.cs" />
+    <Compile Include="NaturalGas.cs" />
+    <Compile Include="NaturalGasSched.cs" />
+    <Compile Include="NetForward.cs" />
+    <Compile Include="PayableInvoice.cs" />
+    <Compile Include="PhysicalLogistics.cs" />
+    <Compile Include="PowerSched.cs" />
+    <Compile Include="PriceIndex.cs" />
+    <Compile Include="ProcessManager.cs" />
+    <Compile Include="ReceivableInvoice.cs" />
+    <Compile Include="Routing.cs" />
+    <Compile Include="Settlement.cs" />
+    <Compile Include="SysAdmin.cs" />
+    <Compile Include="ToolbarHelper.cs" />
+    <Compile Include="TradeConfirmation.cs" />
+    <Compile Include="TradeConnectParameter.cs" />
+    <Compile Include="TradeExecution.cs" />
+    <Compile Include="Valuation.cs" />
+    <Compile Include="VisualModel.cs" />
+    <Compile Include="Volatility.cs" />
+    <Compile Include="Workflow.cs" />
+    <Compile Include="zArchiving.cs" />
+    <Compile Include="zArchivingVC.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
